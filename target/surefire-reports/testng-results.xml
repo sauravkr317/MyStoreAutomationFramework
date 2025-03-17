@@ -2,84 +2,84 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T17:02:07 IST" name="Suite" finished-at="2025-03-17T17:05:42 IST" duration-ms="215142">
+  <suite started-at="2025-03-17T17:09:10 IST" name="Suite" finished-at="2025-03-17T17:12:08 IST" duration-ms="178135">
     <groups>
     </groups>
-    <test started-at="2025-03-17T17:02:07 IST" name="Test" finished-at="2025-03-17T17:05:42 IST" duration-ms="215142">
+    <test started-at="2025-03-17T17:09:10 IST" name="Test" finished-at="2025-03-17T17:12:08 IST" duration-ms="178135">
       <class name="com.mystore.qa.testcases.IndexPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:02:07 IST" name="setUp" finished-at="2025-03-17T17:02:54 IST" duration-ms="46605" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:09:10 IST" name="setUp" finished-at="2025-03-17T17:09:55 IST" duration-ms="45009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="indexPageValidationTest()[pri:1, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:02:54 IST" name="indexPageValidationTest" finished-at="2025-03-17T17:02:54 IST" duration-ms="93" status="PASS">
+        <test-method signature="indexPageValidationTest()[pri:1, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:09:55 IST" name="indexPageValidationTest" finished-at="2025-03-17T17:09:55 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- indexPageValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:02:54 IST" name="tearDown" finished-at="2025-03-17T17:02:54 IST" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:09:55 IST" name="tearDown" finished-at="2025-03-17T17:09:55 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:02:54 IST" name="setUp" finished-at="2025-03-17T17:03:38 IST" duration-ms="43557" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:09:55 IST" name="setUp" finished-at="2025-03-17T17:10:05 IST" duration-ms="10199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickSiginBtnTest()[pri:2, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:03:38 IST" name="clickSiginBtnTest" finished-at="2025-03-17T17:03:40 IST" duration-ms="1904" status="PASS">
+        <test-method signature="clickSiginBtnTest()[pri:2, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:10:05 IST" name="clickSiginBtnTest" finished-at="2025-03-17T17:10:07 IST" duration-ms="1542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSiginBtnTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:03:40 IST" name="tearDown" finished-at="2025-03-17T17:03:40 IST" duration-ms="331" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.IndexPageTest@71c27ee8]" started-at="2025-03-17T17:10:07 IST" name="tearDown" finished-at="2025-03-17T17:10:07 IST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mystore.qa.testcases.IndexPageTest -->
       <class name="com.mystore.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:03:40 IST" name="setUp" finished-at="2025-03-17T17:04:23 IST" duration-ms="42721" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:10:07 IST" name="setUp" finished-at="2025-03-17T17:10:50 IST" duration-ms="43035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageValidationTest()[pri:1, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:04:23 IST" name="loginPageValidationTest" finished-at="2025-03-17T17:04:23 IST" duration-ms="130" status="PASS">
+        <test-method signature="loginPageValidationTest()[pri:1, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:10:50 IST" name="loginPageValidationTest" finished-at="2025-03-17T17:10:50 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:04:23 IST" name="tearDown" finished-at="2025-03-17T17:04:23 IST" duration-ms="339" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:10:50 IST" name="tearDown" finished-at="2025-03-17T17:10:51 IST" duration-ms="639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:04:23 IST" name="setUp" finished-at="2025-03-17T17:05:09 IST" duration-ms="45499" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:10:51 IST" name="setUp" finished-at="2025-03-17T17:11:35 IST" duration-ms="44159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:2, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:05:09 IST" name="loginTest" finished-at="2025-03-17T17:05:12 IST" duration-ms="2981" status="PASS">
+        <test-method signature="loginTest()[pri:2, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:11:35 IST" name="loginTest" finished-at="2025-03-17T17:11:38 IST" duration-ms="3135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:05:12 IST" name="tearDown" finished-at="2025-03-17T17:05:12 IST" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.LoginPageTest@f316aeb]" started-at="2025-03-17T17:11:38 IST" name="tearDown" finished-at="2025-03-17T17:11:39 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mystore.qa.testcases.LoginPageTest -->
       <class name="com.mystore.qa.testcases.SignupPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:05:12 IST" name="setUp" finished-at="2025-03-17T17:05:24 IST" duration-ms="11643" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:11:39 IST" name="setUp" finished-at="2025-03-17T17:11:50 IST" duration-ms="11040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signupPageValidationTest()[pri:1, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:05:24 IST" name="signupPageValidationTest" finished-at="2025-03-17T17:05:24 IST" duration-ms="54" status="PASS">
+        <test-method signature="signupPageValidationTest()[pri:1, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:11:50 IST" name="signupPageValidationTest" finished-at="2025-03-17T17:11:50 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupPageValidationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:05:24 IST" name="tearDown" finished-at="2025-03-17T17:05:24 IST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:11:50 IST" name="tearDown" finished-at="2025-03-17T17:11:50 IST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:05:24 IST" name="setUp" finished-at="2025-03-17T17:05:34 IST" duration-ms="10016" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:11:50 IST" name="setUp" finished-at="2025-03-17T17:12:00 IST" duration-ms="10155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createNewAccountTest()[pri:2, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:05:34 IST" name="createNewAccountTest" finished-at="2025-03-17T17:05:42 IST" duration-ms="8174" status="PASS">
+        <test-method signature="createNewAccountTest()[pri:2, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:12:00 IST" name="createNewAccountTest" finished-at="2025-03-17T17:12:08 IST" duration-ms="7591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewAccountTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:05:42 IST" name="tearDown" finished-at="2025-03-17T17:05:42 IST" duration-ms="308" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.SignupPageTest@6aa3a905]" started-at="2025-03-17T17:12:08 IST" name="tearDown" finished-at="2025-03-17T17:12:08 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
