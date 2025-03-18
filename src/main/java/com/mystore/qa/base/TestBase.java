@@ -1,11 +1,15 @@
 package com.mystore.qa.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -68,6 +72,16 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(10));
+	}
+	
+	//To capture screenshorts
+	public void failed(File screenshortFile) {
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(scrFile, screenshortFile);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

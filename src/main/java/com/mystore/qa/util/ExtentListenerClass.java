@@ -74,13 +74,14 @@ public class ExtentListenerClass extends TestBase implements ITestListener{
 	
 	File screenShotFile = new File(screenShotPath);
 	
+	failed(screenShotFile);
+	
 	if(screenShotFile.exists())
 	{
 		test.fail("Captured Screenshot is below:" + test.addScreenCaptureFromPath(screenShotPath));
 		
 	}
 	
-	//	test.addScreenCaptureFromPath(null)
 		
 	}		
 

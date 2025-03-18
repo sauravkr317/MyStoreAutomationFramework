@@ -1,5 +1,7 @@
 package com.mystore.qa.testcases;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,6 +12,7 @@ import com.mystore.qa.pages.IndexPage;
 import com.mystore.qa.pages.LoginPage;
 import com.mystore.qa.pages.MyAccountPage;
 import com.mystore.qa.pages.SignupPage;
+import com.mystore.qa.testdata.SignupPageDataProvider;
 import com.mystore.qa.util.RandomNo;
 
 public class SignupPageTest extends TestBase{
@@ -35,12 +38,12 @@ public class SignupPageTest extends TestBase{
 		Assert.assertEquals(signupPageTitleHeader, "Create New Customer Account");
 	}
 	
-	@Test(priority = 2)
-	public void createNewAccountTest() {
-		String email =  "sauravkr"+RandomNo.generateRandomNo()+"@gmail.com";
-		accountPage = signupPage.createAcount("Saurav", "Gupta", email, "Sk@98765432", "Sk@98765432");
+	@Test(priority = 2, dataProvider = "testDataProvider", dataProviderClass = SignupPageDataProvider.class)
+	public void createNewAccountTest(String fname, String lname, String email, String pwd, String cnfpwd) throws IOException {
+		String RandomEmail =  fname+lname+RandomNo.generateRandomNo()+"@gmail.com";
+		accountPage = signupPage.createAcount(fname, lname, RandomEmail, pwd, cnfpwd);
 		Assert.assertEquals(accountPage.validateSuccessMessage(), "Thank you for registering with Main Website Store.");
-		Assert.assertEquals(accountPage.validateWelcomeTxt(), "Welcome, Saurav Gupta!");
+		Assert.assertEquals(accountPage.validateWelcomeTxt(), "Welcome, "+fname+" "+lname+"!");
 		loginPage = accountPage.signOut();
 	}
 	

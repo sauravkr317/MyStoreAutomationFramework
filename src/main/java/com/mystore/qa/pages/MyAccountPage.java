@@ -1,10 +1,13 @@
 package com.mystore.qa.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.mystore.qa.base.TestBase;
+import com.mystore.qa.testdata.SignupPageDataProvider;
 import com.mystore.qa.util.Webdriverwait;
 
 public class MyAccountPage extends TestBase{
@@ -21,8 +24,10 @@ public class MyAccountPage extends TestBase{
 	@FindBy(xpath = "(//li[@class=\"authorization-link\"])[1]/a")
 	WebElement signoutBtn;
 	
-	public String validateWelcomeTxt(){
-		Webdriverwait.waitForTextToBeVisible(welcomeTxt, 20, "Welcome, Saurav Gupta!");
+	public String validateWelcomeTxt() throws IOException{
+		SignupPageDataProvider dataProvider = new SignupPageDataProvider();
+		Object[][] data = dataProvider.testDataProvider();
+		Webdriverwait.waitForTextToBeVisible(welcomeTxt, 20, "Welcome, "+data[0][0]+" "+data[0][1]+"!");
 		return welcomeTxt.getText();
 	}
 	
