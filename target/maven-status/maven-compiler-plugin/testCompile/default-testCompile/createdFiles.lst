@@ -1,3 +1,4 @@
 com\mystore\qa\testcases\IndexPageTest.class
 com\mystore\qa\testcases\LoginPageTest.class
+com\mystore\qa\testcases\SearchProductTest.class
 com\mystore\qa\testcases\SignupPageTest.class

@@ -1,6 +1,7 @@
 package com.mystore.qa.testcases;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -31,14 +32,19 @@ public class SearchProductTest extends TestBase{
 	public void SearchProductTest() {
 		String productName = "bag";
 		productsPage = homePage.searchProduct(productName);
-		String productsPageTitle = productsPage.validatePageTitle();
+		String productsPageTitle = productsPage.validatePageTitle().toLowerCase();
 		
 		productLandingPage = productsPage.clickOnProduct();
-		String actualProductName = productLandingPage.validateProductName();
+		String actualProductName = productLandingPage.validateProductName().toLowerCase();
 		System.out.println(actualProductName);
 		Assert.assertTrue(productsPageTitle.contains(productName));
 		Assert.assertTrue(actualProductName.contains(productName));	
 		
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 	}
 
 }

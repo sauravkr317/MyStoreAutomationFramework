@@ -1,11 +1,13 @@
+com\mystore\qa\pages\LoginPage.class
+com\mystore\qa\pages\ProductsPage.class
+com\mystore\qa\pages\MyAccountPage.class
+com\mystore\qa\util\RandomNo.class
+com\mystore\qa\testdata\SignupPageDataProvider.class
 com\mystore\qa\pages\HomePage.class
 com\mystore\qa\util\Webdriverwait.class
-com\mystore\qa\pages\LoginPage.class
+com\mystore\qa\pages\ProductLandingPage.class
 com\mystore\qa\base\TestBase.class
-com\mystore\qa\pages\MyAccountPage.class
 com\mystore\qa\pages\MyWishListPage.class
-com\mystore\qa\util\RandomNo.class
 com\mystore\qa\pages\IndexPage.class
-com\mystore\qa\testdata\SignupPageDataProvider.class
 com\mystore\qa\util\ExtentListenerClass.class
 com\mystore\qa\pages\SignupPage.class
