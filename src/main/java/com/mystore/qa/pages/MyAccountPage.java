@@ -36,10 +36,10 @@ public class MyAccountPage extends TestBase{
 		return successMessage.getText();
 	}
 	
-	public LoginPage signOut() {
+	public IndexPage signOut() {
 		menuBtn.click();
 		signoutBtn.click();
-		return new LoginPage();
+		return new IndexPage();
 	}
 	
 	public MyAccountPage(){

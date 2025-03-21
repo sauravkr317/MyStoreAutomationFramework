@@ -10,7 +10,7 @@ public class RandomNo extends TestBase{
 	
 	public static int generateRandomNo() {
 		Random random = new Random();
-        int num = 100 + random.nextInt(900);
+        int num = 100 + random.nextInt(900000);
         return num;
 	}
 }

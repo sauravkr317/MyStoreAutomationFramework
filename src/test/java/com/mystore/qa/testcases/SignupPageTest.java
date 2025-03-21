@@ -20,7 +20,6 @@ public class SignupPageTest extends TestBase{
 	IndexPage indexPage;
 	SignupPage signupPage;
 	MyAccountPage accountPage;
-	LoginPage loginPage;
 
 	@BeforeMethod
 	public void setUp() {
@@ -44,7 +43,7 @@ public class SignupPageTest extends TestBase{
 		accountPage = signupPage.createAcount(fname, lname, RandomEmail, pwd, cnfpwd);
 		Assert.assertEquals(accountPage.validateSuccessMessage(), "Thank you for registering with Main Website Store.");
 		Assert.assertEquals(accountPage.validateWelcomeTxt(), "Welcome, "+fname+" "+lname+"!");
-		loginPage = accountPage.signOut();
+		indexPage = accountPage.signOut();
 	}
 	
 	@AfterMethod

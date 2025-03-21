@@ -35,7 +35,9 @@ public class LoginPageTest extends TestBase{
 	@Test(priority = 2)
 	public void loginTest() {
 		homePage = loginPage.login(prop.getProperty("email"), prop.getProperty("password"));
+		homePage.signOut();
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {

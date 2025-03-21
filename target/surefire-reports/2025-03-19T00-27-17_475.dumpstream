@@ -1,4 +1,4 @@
-# Created at 2025-03-18T11:37:56.671
+# Created at 2025-03-19T00:27:17.903
 Boot Manifest-JAR contains absolute paths in classpath 'E:\QA Automation Framework\MyStoreV1\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root
