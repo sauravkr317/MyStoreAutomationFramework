@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.mystore.qa.util.ExtentListenerClass"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.mystore.qa.testcases.SearchProductTest">
+      <class name="com.mystore.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageValidationTest"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mystore.qa.testcases.LoginPageTest -->
+      <class name="com.mystore.qa.testcases.SearchProductPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="SearchProductTest"/>
         </methods>
-      </class> <!-- com.mystore.qa.testcases.SearchProductTest -->
+      </class> <!-- com.mystore.qa.testcases.SearchProductPageTest -->
+      <class name="com.mystore.qa.testcases.SignupPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="signupPageValidationTest"/>
+          <include name="createNewAccountTest"/>
+        </methods>
+      </class> <!-- com.mystore.qa.testcases.SignupPageTest -->
+      <class name="com.mystore.qa.testcases.BuyProductPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="buyProductTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mystore.qa.testcases.BuyProductPageTest -->
+      <class name="com.mystore.qa.testcases.IndexPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="clickSiginBtnTest"/>
+          <include name="indexPageValidationTest"/>
+        </methods>
+      </class> <!-- com.mystore.qa.testcases.IndexPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

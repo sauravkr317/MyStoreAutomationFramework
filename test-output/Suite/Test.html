@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 22 00:09:51 IST 2025</td>
+<td>Started on:</td><td>Wed Mar 26 01:33:29 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>133 seconds (133164 ms)</td>
+<tr><td>Total time:</td><td>118 seconds (118658 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,69 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mystore.qa.testcases.BuyProductPageTest.buyProductTest()'><b>buyProductTest</b><br>Test class: com.mystore.qa.testcases.BuyProductPageTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:946)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:336)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:280)
+	at com.mystore.qa.testdata.CheckoutPageDataProvider.testDataProvider2(CheckoutPageDataProvider.java:28)
+	... 25 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace813496676", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace813496676'><pre>java.lang.RuntimeException: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:946)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:336)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:280)
+	at com.mystore.qa.testdata.CheckoutPageDataProvider.testDataProvider2(CheckoutPageDataProvider.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+	... 25 more
+</pre></div></td>
+<td>0</td>
+<td>com.mystore.qa.testcases.BuyProductPageTest@49cb9cb5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,40 +139,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.mystore.qa.testcases.SearchProductTest.SearchProductTest()'><b>SearchProductTest</b><br>Test class: com.mystore.qa.testcases.SearchProductTest</td>
-<td></td>
-<td>4</td>
-<td>com.mystore.qa.testcases.SearchProductTest@e8df99a</td></tr>
-<tr>
-<td title='com.mystore.qa.testcases.SignupPageTest.signupPageValidationTest()'><b>signupPageValidationTest</b><br>Test class: com.mystore.qa.testcases.SignupPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.mystore.qa.testcases.SignupPageTest@517d4a0d</td></tr>
-<tr>
-<td title='com.mystore.qa.testcases.IndexPageTest.indexPageValidationTest()'><b>indexPageValidationTest</b><br>Test class: com.mystore.qa.testcases.IndexPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.mystore.qa.testcases.IndexPageTest@43f82e78</td></tr>
-<tr>
 <td title='com.mystore.qa.testcases.LoginPageTest.loginPageValidationTest()'><b>loginPageValidationTest</b><br>Test class: com.mystore.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.mystore.qa.testcases.LoginPageTest@e54303</td></tr>
-<tr>
-<td title='com.mystore.qa.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.mystore.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>5</td>
-<td>com.mystore.qa.testcases.LoginPageTest@e54303</td></tr>
-<tr>
-<td title='com.mystore.qa.testcases.SignupPageTest.createNewAccountTest()'><b>createNewAccountTest</b><br>Test class: com.mystore.qa.testcases.SignupPageTest<br>Parameters: Vineet, Kumar, VineetKr6543@gmail.com, VineetKr@567#, VineetKr@567#</td>
-<td></td>
-<td>7</td>
-<td>com.mystore.qa.testcases.SignupPageTest@517d4a0d</td></tr>
+<td>com.mystore.qa.testcases.LoginPageTest@2df6226d</td></tr>
 <tr>
 <td title='com.mystore.qa.testcases.IndexPageTest.clickSiginBtnTest()'><b>clickSiginBtnTest</b><br>Test class: com.mystore.qa.testcases.IndexPageTest</td>
 <td></td>
 <td>1</td>
-<td>com.mystore.qa.testcases.IndexPageTest@43f82e78</td></tr>
+<td>com.mystore.qa.testcases.IndexPageTest@33fe57a9</td></tr>
+<tr>
+<td title='com.mystore.qa.testcases.SignupPageTest.createNewAccountTest()'><b>createNewAccountTest</b><br>Test class: com.mystore.qa.testcases.SignupPageTest<br>Parameters: Vineet, Kumar, VineetKr6543@gmail.com, VineetKr@567#, VineetKr@567#</td>
+<td></td>
+<td>7</td>
+<td>com.mystore.qa.testcases.SignupPageTest@12ed9db6</td></tr>
+<tr>
+<td title='com.mystore.qa.testcases.IndexPageTest.indexPageValidationTest()'><b>indexPageValidationTest</b><br>Test class: com.mystore.qa.testcases.IndexPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.qa.testcases.IndexPageTest@33fe57a9</td></tr>
+<tr>
+<td title='com.mystore.qa.testcases.SearchProductPageTest.SearchProductTest()'><b>SearchProductTest</b><br>Test class: com.mystore.qa.testcases.SearchProductPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.mystore.qa.testcases.SearchProductPageTest@4ff4357f</td></tr>
+<tr>
+<td title='com.mystore.qa.testcases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: com.mystore.qa.testcases.LoginPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.mystore.qa.testcases.LoginPageTest@2df6226d</td></tr>
+<tr>
+<td title='com.mystore.qa.testcases.SignupPageTest.signupPageValidationTest()'><b>signupPageValidationTest</b><br>Test class: com.mystore.qa.testcases.SignupPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.qa.testcases.SignupPageTest@12ed9db6</td></tr>
 </table><p>
 </body>
 </html>

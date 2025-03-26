@@ -12,7 +12,7 @@ import com.mystore.qa.pages.LoginPage;
 import com.mystore.qa.pages.ProductLandingPage;
 import com.mystore.qa.pages.ProductsPage;
 
-public class SearchProductTest extends TestBase{
+public class SearchProductPageTest extends TestBase{
 	
 	IndexPage indexPage;
 	LoginPage loginPage;

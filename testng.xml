@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.mystore.qa.testdata.SignupPageDataProvider"/>
-      <class name="com.mystore.qa.testcases.SignupPageTest"/>
-      <class name="com.mystore.qa.testcases.IndexPageTest"/>
-      <class name="com.mystore.qa.testcases.LoginPageTest"/>
-      <class name="com.mystore.qa.testcases.SearchProductTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<listeners>
+		<listener class-name="com.mystore.qa.util.ExtentListenerClass" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.mystore.qa.testdata.SignupPageDataProvider" />
+			<class name="com.mystore.qa.testdata.CheckoutPageDataProvider" />
+			<class name="com.mystore.qa.testcases.IndexPageTest" />
+			<class name="com.mystore.qa.testcases.LoginPageTest" />
+			<class name="com.mystore.qa.testcases.SignupPageTest" />
+			<class name="com.mystore.qa.testcases.SearchProductPageTest" />
+			<class name="com.mystore.qa.testcases.BuyProductPageTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
+

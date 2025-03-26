@@ -3,6 +3,7 @@ package com.mystore.qa.base;
 import java.io.File;
 import java.io.FileInputStream;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -12,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -36,6 +38,7 @@ public class TestBase {
 	}
 	
 	public static void initialization() {
+		
 		logger = LogManager.getLogger(TestBase.class);
 		String browser = prop.getProperty("browser").toLowerCase().strip();
 		System.out.println(browser);
