@@ -47,6 +47,7 @@ public class BuyProductPageTest extends TestBase {
 		System.out.println("product size is selected");
 		productLandingPage.selectProductColor(productColor);
 		System.out.println("product color is selected");
+		Thread.sleep(2000);
 		productLandingPage.selectProductQuantity(qty);
 		System.out.println("product qty is selected");
 		boolean flag = productLandingPage.AddToCart();
