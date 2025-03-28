@@ -13,6 +13,7 @@ public class ProductsPage extends TestBase{
 	
 	public ProductLandingPage clickOnProduct() {
 		product.click();
+		System.out.println("clicked on product");
 		return new ProductLandingPage();
 	}
 	

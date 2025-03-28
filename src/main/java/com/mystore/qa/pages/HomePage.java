@@ -33,6 +33,7 @@ public class HomePage extends TestBase{
 		searchInput.sendKeys(product);
 		Webdriverwait.waitForElementToBeClickable(searchBtn, 10);
 		searchBtn.click();
+		System.out.println("clicked on search btn");
 		return new ProductsPage();
 	}
 	

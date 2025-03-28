@@ -25,8 +25,9 @@ public class Webdriverwait extends TestBase{
 		wait.until(ExpectedConditions.textToBePresentInElement(ele, text));
 	}
 	
-	public static void waitForElementToBeClickable(WebElement ele, int duration) {
+	public static WebElement waitForElementToBeClickable(WebElement ele, int duration) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
-		wait.until(ExpectedConditions.elementToBeClickable(ele));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(ele));
+		return element;
 	}
 }

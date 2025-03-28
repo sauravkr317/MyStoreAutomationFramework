@@ -18,73 +18,82 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-	
+
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Logger logger;
-	
+
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\com\\mystore\\qa\\config\\config.properties");
+			FileInputStream fis = new FileInputStream(
+					System.getProperty("user.dir") + "\\src\\main\\java\\com\\mystore\\qa\\config\\config.properties");
 			prop.load(fis);
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void initialization() {
-		
+
 		logger = LogManager.getLogger(TestBase.class);
 		String browser = prop.getProperty("browser").toLowerCase().strip();
 		System.out.println(browser);
-		
+
 		switch (browser) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			HashMap<String, Object> prefs = new HashMap<>();
+			prefs.put("autofill.profile_enabled", false); 
+			prefs.put("credentials_enable_service", false); 
+			prefs.put("profile.password_manager_enabled", false); 
+
+			// Apply preferences to ChromeOptions
+			options.setExperimentalOption("prefs", prefs);
+
+			driver = new ChromeDriver(options);
 			break;
-		
+
 		case "edge":
 			WebDriverManager.iedriver().setup();
 			driver = new EdgeDriver();
 			break;
-			
+
 		case "safari":
 			WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
 			break;
-			
+
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			break;
-			
+
 		default:
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			break;
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("url"));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(10));
 	}
-	
-	//To capture screenshorts
+
+	// To capture screenshorts
 	public void failed(File screenshortFile) {
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(scrFile, screenshortFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 }

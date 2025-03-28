@@ -77,13 +77,16 @@ public class ProductLandingPage extends TestBase{
 	
 	public boolean AddToCart() {
 		addToCartBtn.click();
+		System.out.println("clicked on add to cart btn");
 		Webdriverwait.waitForElementToBeVisible(addToCartSuccessMsg, 10);
 		return addToCartSuccessMsg.isDisplayed();
 	}
 	
 	public CheckoutPage ClickproceedToCheckoutBtn() {
 		showCartBtn.click();
+		System.out.println("clicked on show cart btn");
 		proceedToCheckoutBtn.click();
+		System.out.println("clicked on proceed to checkout btn");
 		return new CheckoutPage();
 	}
 	

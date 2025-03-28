@@ -46,9 +46,13 @@ public class CheckoutPage extends TestBase{
 	@FindBy(css = "button.action-save-address")
 	WebElement shipHereBtn;
 	
+	@FindBy(xpath = "//button[contains(@class, \"checkout\")]")
+	WebElement placeOrderBtn;
+	
 	public void clickOnNewAddress() {
 //		Webdriverwait.waitForElementToBeClickable(newAddressBtn, 30);
 		newAddressBtn.click();
+		System.out.println("clicked on add new address btn");
 	}
 	
 	public boolean addNewAddress(String company, String address, String city, String state, String zip, String country, String phoneNo) {
@@ -80,7 +84,15 @@ public class CheckoutPage extends TestBase{
 		}
 		
 		nextBtn.click();
+		System.out.println("clicked on next btn");
 		return true;
+	}
+	
+	public SuccessPage placeOrder() {
+		WebElement ele = Webdriverwait.waitForElementToBeClickable(placeOrderBtn, 10);
+		ele.click();
+		System.out.println("clicked on place order btn");
+		return new SuccessPage();
 	}
 	
 	public CheckoutPage() {
