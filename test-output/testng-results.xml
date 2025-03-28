@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-29T01:19:27 IST" name="Default suite" finished-at="2025-03-29T01:20:26 IST" duration-ms="58775">
+  <suite started-at="2025-03-29T01:53:31 IST" name="Default suite" finished-at="2025-03-29T01:54:30 IST" duration-ms="59042">
     <groups>
     </groups>
-    <test started-at="2025-03-29T01:19:27 IST" name="Default test" finished-at="2025-03-29T01:20:26 IST" duration-ms="58775">
+    <test started-at="2025-03-29T01:53:31 IST" name="Default test" finished-at="2025-03-29T01:54:30 IST" duration-ms="59042">
       <class name="com.mystore.qa.testcases.BuyProductPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.BuyProductPageTest@3e7dd664]" started-at="2025-03-29T01:19:28 IST" name="setUp" finished-at="2025-03-29T01:19:42 IST" duration-ms="14129" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.BuyProductPageTest@3e7dd664]" started-at="2025-03-29T01:53:33 IST" name="setUp" finished-at="2025-03-29T01:53:46 IST" duration-ms="13315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="buyProductTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.mystore.qa.testcases.BuyProductPageTest@3e7dd664]" started-at="2025-03-29T01:19:42 IST" name="buyProductTest" data-provider="testDataProvider2" finished-at="2025-03-29T01:20:25 IST" duration-ms="43139" status="PASS">
+        <test-method signature="buyProductTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.mystore.qa.testcases.BuyProductPageTest@3e7dd664]" started-at="2025-03-29T01:53:46 IST" name="buyProductTest" data-provider="testDataProvider2" finished-at="2025-03-29T01:54:30 IST" duration-ms="43905" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.BuyProductPageTest@3e7dd664]" started-at="2025-03-29T01:20:25 IST" name="tearDown" finished-at="2025-03-29T01:20:26 IST" duration-ms="423" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.BuyProductPageTest@3e7dd664]" started-at="2025-03-29T01:54:30 IST" name="tearDown" finished-at="2025-03-29T01:54:30 IST" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
